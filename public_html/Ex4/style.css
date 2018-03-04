@@ -30,6 +30,12 @@ header{
     color: white;
     font-family: monospace;
     font-size: 30px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    margin-top: 20px;
+    margin-left: 270px;
+    margin-right: 270px;
+    border-radius: 100px;
 }
 
 #Tags li{
@@ -43,9 +49,10 @@ header{
 #Tags {
     overflow: hidden;
     background-color: #333;
-    position: relative; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    top: 0;
+    width: 100%; 
 }
 
 /* Links inside the navbar */
@@ -77,6 +84,9 @@ h2{
     padding-right: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
+    border-radius: 90px;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 #Programminglanguage li{
@@ -96,6 +106,9 @@ h2{
     padding-right: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
+    border-radius: 90px;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 #RisingStartUp{
@@ -105,6 +118,9 @@ h2{
     padding-right: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
+    border-radius: 90px;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 img{
@@ -124,4 +140,14 @@ footer{
 footer h3{
     text-align: end;
     margin-right: 90px;
+}
+
+table{
+    margin-top: 60px;
+    border: #003399 dashed medium;
+    align-content: center;
+}
+
+td { 
+    padding: 15px;
 }
