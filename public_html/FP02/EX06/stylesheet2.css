@@ -1,10 +1,61 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 10/mar/2018, 17:31:36
-    Author     : NunoFerreira
-*/
+.container{
+    /*border: 2px blue solid;*/
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template: repeat(4, 100vh) / repeat(1, 100%);
+    grid-gap: 30px;
+
+}
+
+header{
+    background-color: beige;
+    color: black;
+    /*    border-radius: 5px;
+        border: 2px dodgerblue solid;*/
+    text-align: center;
+    grid-area: 1 / 1 / span 1 / 1;
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+#ecra1{
+    background-color: beige;
+    color: black;
+    /*    border-radius: 5px;
+        border: 2px dodgerblue solid;*/
+    text-align: center;
+    grid-area: 2 / 1 / span 1 / 1;
+    width: 100vw;
+    height: 100vh;
+}
+
+#ecra2{
+    background-color: #88CCF1;
+    color: black;
+    /*    border-radius: 5px;
+        border: 2px dodgerblue solid;*/
+    text-align: center;
+    grid-area: 3 / 1 / span 1 / 1;
+    width: 100vw;
+    height: 100vh;
+}
+
+#ecra3{
+    background-color: #003399;
+    color: black;
+    /*    border-radius: 5px;
+        border: 2px dodgerblue solid;*/
+    text-align: center;
+    grid-area: 4 / 1 / span 1 / 1;
+    width: 100vw;
+    height: 100vh;
+}
 
