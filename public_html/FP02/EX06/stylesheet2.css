@@ -3,59 +3,99 @@
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template: repeat(4, 100vh) / repeat(1, 100%);
-    grid-gap: 30px;
+    grid-template: repeat(18, 25vh) / repeat(4, 25%);
 
 }
 
 header{
-    background-color: beige;
-    color: black;
-    /*    border-radius: 5px;
-        border: 2px dodgerblue solid;*/
+
+    background-image: url(wall1.jpg);
+    background-size: 100% 100%;
     text-align: center;
-    grid-area: 1 / 1 / span 1 / 1;
+    grid-area: 1 / 1 / 4 / 4;
     width: 100vw;
     height: 100vh;
+    position:relative;
 }
 
-header{
-    position: absolute;
-    bottom: 0;
+h1{
+    color: gainsboro;
+}
+
+#cont1{
+    grid-area: 2 / 2 / span 2 / span 1;
+    z-index: 5;
+    background-color: gainsboro;
     text-align: center;
-    padding-bottom: 100px;
+}
+
+#cont2{
+    grid-area: 2 / 3 / span 2 / span 1;
+    z-index: 5;
+    background-color: gainsboro;
+    border-left: #4a4a4a dotted 4px;
+    text-align: center;
+}
+
+img{
+    width: 200px;
+    height: 180px;
+}
+
+a{
+    bottom: 90px;
+    position:absolute;
+    text-decoration: none;
+    color: gainsboro;
+    font-size: 30px;
+    text-align: center;
+}
+
+#cont3{
+    grid-area: 6 / 2 / span 2 / span 1;
+    z-index: 5;
+    background-color: gainsboro;
+    text-align: center;
+}
+
+#cont4{
+    grid-area: 6 / 3 / span 2 / span 1;
+    z-index: 5;
+    background-color: gainsboro;
+    border-left: #4a4a4a dotted 4px;
+    text-align: center;
 }
 
 #ecra1{
-    background-color: beige;
-    color: black;
     /*    border-radius: 5px;
         border: 2px dodgerblue solid;*/
     text-align: center;
-    grid-area: 2 / 1 / span 1 / 1;
+    grid-area: 5 / 1 / 9 / 4;
     width: 100vw;
     height: 100vh;
+    background-image: url(wall2.jpg);
+    background-size: 100% 100%;
+    position:relative;
+
 }
 
 #ecra2{
-    background-color: #88CCF1;
-    color: black;
-    /*    border-radius: 5px;
-        border: 2px dodgerblue solid;*/
     text-align: center;
-    grid-area: 3 / 1 / span 1 / 1;
+    grid-area: 9 / 1 / 13 / 4;
     width: 100vw;
     height: 100vh;
+    background-image: url(wall3.jpg);
+    background-size: 100% 100%;
+    position:relative;
 }
 
 #ecra3{
-    background-color: #003399;
-    color: black;
-    /*    border-radius: 5px;
-        border: 2px dodgerblue solid;*/
     text-align: center;
-    grid-area: 4 / 1 / span 1 / 1;
+    grid-area: 13 / 1 / 18 / 4;
     width: 100vw;
     height: 100vh;
+    background-image: url(wall4.jpg);
+    background-size: 100% 100%;
+    position:relative;
 }
 
