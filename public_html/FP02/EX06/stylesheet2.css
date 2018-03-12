@@ -1,5 +1,4 @@
 .container{
-    /*border: 2px blue solid;*/
     width: 100vw;
     height: 100vh;
     display: grid;
@@ -8,7 +7,6 @@
 }
 
 header{
-
     background-image: url(wall1.jpg);
     background-size: 100% 100%;
     text-align: center;

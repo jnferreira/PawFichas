@@ -1,0 +1,63 @@
+.jumbotron h1{
+    text-align: center;
+}
+
+.jumbotron img{
+    margin-left: 85%;
+    width: 100px;
+    height: 100px;
+}
+
+
+.nav li{
+    display: inline;
+    
+}
+
+.nav{
+    border-top: #393c3d groove medium;
+    border-bottom: #393c3d groove medium;
+    
+}
+
+.nav a{
+    color: #141E30;
+    padding: 0 20px 0 20px;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    text-decoration: none;
+    background-color: gray;
+    color: white;
+    
+}
+
+.neighborhood-guides{
+    border: #670000 ridge thick;
+    width: 20%;
+    margin: 50px 0 0 70px;
+    position: fixed;
+}
+
+.neighborhood-guides li{
+    margin-top: 10px;
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.neighborhood-guides a:hover{
+    background-color: #670000;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+.neighborhood-guides a{
+    color: #141E30;
+    
+    font-size: 20px;
+    padding: 0 100% 0px 100%;
+    text-decoration: none;
+}
