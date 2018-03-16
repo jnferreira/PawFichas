@@ -1,19 +1,17 @@
-var height = document.getElementById('customHeight');
-var weight = document.getElementById('customWeight');
-var imc = 0;
-var btn = document.querySelector('button');
-var imagem = document.getElementById('image1');
-var txt = document.querySelector('p');
+let height = document.getElementById('customHeight');
+let weight = document.getElementById('customWeight');
+let imc = 0;
+let btn = document.querySelector('button');
+let imagem = document.getElementById('image1');
+let txt = document.querySelector('p');
 
-var imagens = {
+let imagens = {
     gordo: "http://curiosamente.diariodepernambuco.com.br/wp-content/uploads/2017/11/homem-pesado-obeso-gordo.jpg",
     magro: "https://pbs.twimg.com/profile_images/480884012114669569/OKAaxfVz_400x400.jpeg",
     bom: "https://pbs.twimg.com/profile_images/480884012114669569/OKAaxfVz_400x400.jpeg"
 };
 
 btn.addEventListener('click', updateBtn);
-
-
 
 function updateBtn() {
 

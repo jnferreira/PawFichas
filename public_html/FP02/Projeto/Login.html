@@ -12,22 +12,25 @@ and open the template in the editor.
         <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
         <link rel="stylesheet" href="stylesheetLogin.css">
         <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     </head>
     <body>
 
         <div class="container">
             <form>
-                Nome<br>
-                <input type="text" name="Nome">
+                <div class="input-group margin-bottom-sm" style="width: 390px">
+                    <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i></span>
+                    <input class="form-control" type="text" placeholder="Utilizador">
+                </div>
+                <div class="input-group" style="width: 390px">
+                    <span class="input-group-addon"><i class="fa fa-key fa-fw" aria-hidden="true"></i></span>
+                    <input class="form-control" type="password" placeholder="Password">
+                </div>
                 <br>
-                <br>
-                <br>
-                Password<br>
-                <input type="password" name="Password">
                 <br>
                 <br>
                 <input type="submit" value="Submit">
-                
+
             </form>
         </div>
     </body>

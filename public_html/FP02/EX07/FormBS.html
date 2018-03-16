@@ -15,14 +15,14 @@ and open the template in the editor.
     </head>
     <body>
         <div class="container">
-            <form>
+            <form id="myform">
                 Nome<br>
-                <input type="text" name="Nome Completo"><br>
+                <input id="nome" type="text" name="Nome Completo" onblur="validateName()"><br>
                 <br>
                 Email<br>
-                <input type="email" name="Email"><br>
+                <input id="email" type="email" name="Email" onblur="validateEmail()"><br>
                 <br>
-                
+
                 Mensagem<br>
                 <br>
                 <textarea rows="4" cols="50">
@@ -31,6 +31,7 @@ and open the template in the editor.
 
                 <br>
                 <input type="submit" value="Submit">
+                <script language="JavaScript" type="text/javascript" src="../Projeto/JavaScript/formScript.js"></script>
             </form>
         </div>
     </body>
