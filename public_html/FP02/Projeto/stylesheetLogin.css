@@ -1,0 +1,23 @@
+html, body{
+    background-image: url("http://portugalresident.com/sites/default/files/styles/node-detail/public/field/image/pico_ruivo_madeira.jpg?itok=nM3el5Fx");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form{
+    text-align: center;
+    margin-top: 70px;
+    border: #1e8010 solid medium;
+    width: auto;
+    display: inline-block;
+    padding: 80px 100px 80px 100px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+.container{
+    text-align: center;
+
+
+}
