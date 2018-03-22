@@ -6,12 +6,11 @@ html, body{
     background-size: cover;
     position: absolute;
     width: 100%;
+    
 }
 
 .radio{
     width: auto;
-    
-    
 }
 
 form{
