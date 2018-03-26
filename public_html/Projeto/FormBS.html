@@ -10,8 +10,10 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
-        <link rel="stylesheet" href="style01.css">
+        <link rel="stylesheet" href="../FP02/EX07/style01.css">
         <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="container">
@@ -20,7 +22,7 @@ and open the template in the editor.
                 <input id="nome" type="text" name="Nome Completo" onblur="validateName()"><br>
                 <br>
                 Email<br>
-                <input id="email" type="email" name="Email" onblur="validateEmail()"><br>
+                <input id="email" type="email" name="Email"><br>
                 <br>
 
                 Mensagem<br>
@@ -30,7 +32,7 @@ and open the template in the editor.
                 </textarea><br>
 
                 <br>
-                <input type="submit" value="Submit">
+                <input id="mySubmit" type="submit" value="Submit">
                 <script language="JavaScript" type="text/javascript" src="../Projeto/JavaScript/formScript.js"></script>
             </form>
         </div>

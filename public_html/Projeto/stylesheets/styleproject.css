@@ -1,0 +1,348 @@
+header nav p {
+    display: inline;
+    padding: 0px 20px 0 20px;
+}
+
+#imgHeader {
+    width: 450px;
+    height: 150px;
+}
+
+header {
+    margin-top: 20px;
+}
+
+header nav p a {
+    color: #000000;
+
+}
+
+header nav p a:hover {
+    color: #00cc00;
+    text-decoration: none;
+}
+
+header h1:hover {
+    color: #00cc00;
+}
+
+header nav {
+    margin-top: 30px;
+
+}
+
+.navigation {
+    margin-top: 20px;
+    padding: 20px 0 10px 0;
+
+}
+
+.navigation li {
+    display: inline;
+    font-size: 20px;
+    padding: 0 20px 0 20px;
+    color: black;
+}
+
+.navigation li a {
+
+    color: black;
+}
+
+.navigation li a:hover {
+    color: #00cc00;
+    text-decoration: none;
+}
+
+.jumbotron {
+    margin-top: 30px;
+    background-image: url("http://www.nina-travels.com/wp-content/uploads/2016/05/madeira-tourist-attractions11.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    height: 600px;
+}
+
+.jumbotron .container h1 {
+    color: #cccccc;
+}
+
+.jumbotron .container h1:hover {
+    color: white;
+}
+
+.container .row-sm-4 audio {
+    width: 100%;
+    margin-left: 40px;
+}
+
+.container .row-sm-2 .col-sm-3 {
+    text-align: center;
+}
+
+.container .row-sm-2 .col-sm-3 p {
+    margin-top: 20px;
+}
+
+.container .row-sm-2 {
+    margin-top: 20px;
+}
+
+.container .row h2:hover {
+    color: #ff7d26;
+}
+
+#youtubeVideos {
+    margin-bottom: 90px;
+}
+
+#title1 {
+    background: #5a5a5a;
+    color: white;
+    padding-left: 30px;
+    border-radius: 30px;
+    margin-bottom: 50px;
+}
+
+#title1:hover {
+    background: #5a5a5a;
+    color: gold;
+    padding-left: 30px;
+    border-radius: 30px;
+    margin-bottom: 50px;
+}
+
+#title2 {
+    background: #5a5a5a;
+    color: white;
+    padding-left: 30px;
+    border-radius: 30px;
+    margin-bottom: 50px;
+}
+
+#title2:hover {
+    background: white;
+    color: black;
+    padding-left: 30px;
+}
+
+img {
+    width: 400px;
+    height: 300px;
+    border-radius: 60px;
+}
+
+#cont1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#cont2 {
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+#cont3 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#cont4 {
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    top: 50%;
+}
+
+#nextBtn {
+
+    border-radius: 50px;
+    background-color: white;
+
+    margin-top: 20%;
+
+}
+
+#nextBtn:hover {
+
+    opacity: 0.4;
+    text-decoration: none;
+
+}
+
+#loginForm {
+    border: 2px #1e8010 solid;
+    padding: 20px;
+    border-radius: 30px;
+    background-image: url("https://image.freepik.com/fotos-gratis/fundo-de-grama-verde-e-textura-fundo-de-relva_3236-333.jpg");
+}
+
+#registForm {
+    border: 2px #1e8010 solid;
+    padding: 20px;
+    border-radius: 30px;
+    background-image: url("https://image.freepik.com/fotos-gratis/fundo-de-grama-verde-e-textura-fundo-de-relva_3236-333.jpg");
+
+}
+
+#form input {
+
+    width: 100%;
+
+}
+
+#btnMenu:hover {
+    opacity: 0.4;
+}
+
+#menu {
+    background-image: url("https://thumbs.dreamstime.com/b/areia-da-praia-13552562.jpg");
+    border-radius: 50px;
+    margin: 15px 30px 0 30px;
+}
+
+#menu ul li a {
+
+}
+
+#hoverdiv {
+    display: none;
+    position: absolute;
+    font-size: 14px;
+    background-color: #fff;
+    color: #404040;
+    border: 1px solid #999;
+    padding: 7px;
+}
+
+#menu ul li a:hover {
+
+    color: darkgreen;
+
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 10px;
+    border-radius: 90px;
+}
+
+.fa:hover {
+    opacity: 0.9;
+    text-decoration: none;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+}
+
+.fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+    background: #00aff0;
+    color: white;
+}
+
+.fa-android {
+    background: #a4c639;
+    color: white;
+}
+
+.fa-dribbble {
+    background: #ea4c89;
+    color: white;
+}
+
+.fa-vimeo {
+    background: #45bbff;
+    color: white;
+}
+
+.fa-tumblr {
+    background: #2c4762;
+    color: white;
+}
+
+.fa-vine {
+    background: #00b489;
+    color: white;
+}
+
+.fa-foursquare {
+    background: #45bbff;
+    color: white;
+}
+
+.fa-stumbleupon {
+    background: #eb4924;
+    color: white;
+}
+
+.fa-flickr {
+    background: #f40083;
+    color: white;
+}
+
+.fa-yahoo {
+    background: #430297;
+    color: white;
+}
+
+.fa-soundcloud {
+    background: #ff5500;
+    color: white;
+}
+
+.fa-reddit {
+    background: #ff5700;
+    color: white;
+}
+
+.fa-rss {
+    background: #ff6600;
+    color: white;
+}
