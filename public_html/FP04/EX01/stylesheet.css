@@ -1,0 +1,45 @@
+img {
+
+    width: 100px;
+    height: 100px;
+    display: inline;
+
+}
+
+.container {
+    display: inline;
+
+}
+
+#imageMain {
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+
+}
+
+#main {
+    text-align: center;
+}
+
+.row {
+    margin-top: 50px;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.col-md-2 {
+    background-color: #62cbcb;
+    padding: 10px 10px 10px 10px;
+    margin: 20px 20px 20px 20px;
+    border-radius: 50px;
+}
+
+.col-md-2:hover {
+    background-color: #0f21cb;
+    padding: 10px 10px 10px 10px;
+    margin: 20px 20px 20px 20px;
+}
+
+

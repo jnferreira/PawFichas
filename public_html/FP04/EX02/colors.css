@@ -1,0 +1,13 @@
+.col-md-1{
+    background-color: #0f21cb;
+}
+
+.container{
+    display: inline-grid;
+    
+}
+
+.row{
+    width: 40%;
+}
+

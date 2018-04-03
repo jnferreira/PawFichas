@@ -17,11 +17,11 @@ function updateBtn() {
 
     imc = weight.value / Math.pow(height.value, 2);
 
-    if (0,00207 < imc < 0,00264) {
+    if (0.00207 < imc < 0.00264) {
         imagem.src = imagens.bom;
-    } else if (imc >= 0,00264) {
+    } else if (imc >= 0.00264) {
         imagem.src = imagens.gordo;
-    } else if (imc < 0,00207) {
+    } else if (imc < 0.00207) {
         imagem.src = imagens.magro;
     }else {
         //imagem.src = imagens.magro;

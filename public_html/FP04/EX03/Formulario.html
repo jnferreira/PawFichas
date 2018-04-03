@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="formularios.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css"
+          integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css"
+          integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<div class="container" id="first">
+    <h2>Morada Preferencial</h2>
+
+    <br>
+    <br>
+    <br>
+    <form>
+        <div>
+
+            <div class="form-group">
+                <label class="checkbox-inline">
+                    <input type="checkbox" value="">Casa
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" value="">Profissional
+                </label>
+
+            </div>
+
+            <br>
+
+
+            <div class="form-group" style="width: 10%">
+                <label for="sel1">Titulo*</label>
+                <select class="form-control" id="sel1" required>
+                    <option>titulo1</option>
+                    <option>titulo2</option>
+                    <option>titulo3</option>
+                    <option>titulo4</option>
+                </select>
+            </div>
+
+            <br>
+
+
+            <div class="form-group col-xs-6 col-md-6">
+                <label for="name" class="control-label">Nome*</label>
+                <input type="text" value='' class="form-control" id="name" placeholder="" required>
+            </div>
+
+
+            <div class="form-group col-xs-6 col-md-6">
+                <label for="name" class="control-label">Apelido*</label>
+                <input type="text" value='' class="form-control" id="apelido" placeholder="" required>
+            </div>
+
+            <br>
+
+            <div class="form-group col-xs-6 col-md-6">
+                <label for="name" class="control-label">Email*</label>
+                <input type="email" value='' class="form-control" id="email1" placeholder="" required>
+            </div>
+            <div class="form-group col-xs-6 col-md-6">
+                <label for="name" class="control-label">Confirmar e-mail*</label>
+                <input type="email" value='' class="form-control" id="email2" placeholder="" required>
+            </div>
+
+            <br>
+
+            <div class="form-group col-xs-6 col-md-6">
+                <label for="name" class="control-label">Código Postal*</label>
+                <input type="text" value='' class="form-control" id="cp" placeholder="" onblur="validatecp()" required>
+            </div>
+            <div class="form-group col-xs-6 col-md-6">
+                <label for="name" class="control-label">Cidade*</label>
+                <input type="text" value='' class="form-control" id="cidade" placeholder="" required>
+            </div>
+
+            <br>
+
+            <div class="form-group" style="width: 40%">
+                <label for="sel1">País*</label>
+                <select class="form-control" id="sel2" required>
+                    <option>Portugal</option>
+                    <option>Espanha</option>
+                    <option>Italia</option>
+                    <option>França</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div class="form-group col-xs-6 col-md-6">
+                <label for="name" class="control-label">Nº de Telefone</label>
+                <input type="tel" value='' class="form-control" id="tele" placeholder="">
+            </div>
+            <div class="form-group col-xs-6 col-md-6">
+                <label for="name" class="control-label">TM</label>
+                <input type="tel" value='' class="form-control" id="movel" placeholder="">
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <br>
+
+        <div>
+
+            <h2>Detalhes do Condutor</h2>
+
+            <br>
+            <br>
+            <br>
+
+
+            <label for="sel1">Data de Nascimento*</label>
+
+            <div class="form-inline" id="select1">
+
+                <select class="form-control" id="sel3">
+                    <option>0</option>
+                    <option>titulo2</option>
+                    <option>titulo3</option>
+                    <option>titulo4</option>
+                </select>
+                <select class="form-control" id="sel4">
+                    <option>titulo1</option>
+                    <option>titulo2</option>
+                    <option>titulo3</option>
+                    <option>titulo4</option>
+                </select>
+                <select class="form-control" id="sel5">
+                    <option>titulo1</option>
+                    <option>titulo2</option>
+                    <option>titulo3</option>
+                    <option>titulo4</option>
+                </select>
+            </div>
+
+            <br>
+
+
+            <div class="form-group col-xs-6 col-md-6">
+                <label for="name" class="control-label">Nova Password*</label>
+                <input type="password" value='' class="form-control" id="pass1" onblur="validatePw()" placeholder="" required>
+            </div>
+
+
+            <div class="form-group col-xs-6 col-md-6">
+                <label for="name" class="control-label">Confirmar nova Password*</label>
+                <input type="password" value='' class="form-control" id="pass2" placeholder="" required>
+            </div>
+
+            <br>
+
+            <div class="form-group col-xs-12 col-md-12">
+                <label for="name" class="control-label">Nº de Carta de Condução*</label>
+                <input type="text" value='' class="form-control" id="carta" placeholder="" style="width: 24.5%" required>
+            </div>
+
+
+            <div class="form-group" style="margin-top: 180px">
+                <label class="checkbox-inline">
+                    <input type="checkbox" value="" style="padding: 10px 10px 10px 10px">Aceito os Termos e Condições
+                    Gerais
+                </label>
+
+
+            </div>
+
+            <br>
+            <div class="container" id="submitBtn">
+
+                <button class="btn-primary" id="btn1"><input id="btn2" type="submit" value="CRIAR O MEU PERFIL">
+                </button>
+
+            </div>
+
+            <br>
+            <br>
+            <br>
+        </div>
+
+    </form>
+</div>
+
+
+<script language="JavaScript" type="text/javascript" src="formularioj.js"></script>
+</body>
+</html>
