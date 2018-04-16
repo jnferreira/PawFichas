@@ -1,6 +1,8 @@
 var http = require('http');
 var fs = require('fs');
 var path = require('path');
+var readFile = fs.createReadStream("countries.json");
+
 
 http.createServer(function (request, response) {
     console.log('request ', request.url);
@@ -12,11 +14,7 @@ http.createServer(function (request, response) {
 
     if (request.method === 'GET' && request.url === '/getCountries') {
 
-        fs.readFile('./countries.json', 'utf8', function (err, data) {
-            if (err) throw err;
-            var obj = JSON.parse(data);
-            response.end(obj, 'utf-8');
-        });
+        readFile.pipe(response);
     }
 
 
