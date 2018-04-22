@@ -8,7 +8,7 @@ function loadDoc() {
             myFunction(obj);
         }
     };
-    xmlhttp.open("GET", "http://127.0.0.1:8125/getCountries", true);
+    xmlhttp.open("GET", "http://127.0.0.1:8125/", true);
     xmlhttp.send();
 
 

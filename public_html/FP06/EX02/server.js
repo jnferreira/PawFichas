@@ -1,62 +1,90 @@
-var http = require('http');
-var fs = require('fs');
-var path = require('path');
-var readFile = fs.createReadStream("countries.json");
+const http = require('http');
+const fs = require('fs');
+// var logger = fs.createWriteStream('file.txt', {
+//     flags: 'a'
+// })
+var formidable = require('formidable');
 
 
-http.createServer(function (request, response) {
-    console.log('request ', request.url);
+const server = http.createServer(function (req, res) {
 
-    var filePath = '.' + request.url;
-    if (filePath === './') {
-        filePath = './country.html';
+    let file;
+    console.log('request ', req.url);
+
+    try {
+
+        file = fs.readFileSync('./Formulario.jade');
+
+    } catch (e) {
+
+        res.writeHead(404, {'content-type': 'text/plain'});
+        res.write('404 File Not Found!');
+        res.end();
+        return;
+
     }
 
-    if (request.method === 'GET' && request.url === '/getCountries') {
+    if (file) {
 
-        readFile.pipe(response);
+        res.writeHead(200, {'content-type': 'text/html'});
+        res.write(file);
+        res.end();
+
+    }
+
+    if (req.method === 'POST' && req.url === '/forms') {
+
+
+        var form = new formidable.IncomingForm();
+        form.parse(req, function (err, fields, files) {
+            var oldpath = files.filetoupload.path;
+            var newpath = '/Users/joaoferreira/Desktop/' + files.filetoupload.name;
+            fs.rename(oldpath, newpath, function (err) {
+                if (err) throw err;
+                res.write('File uploaded and moved!');
+                res.end();
+            });
+        });
+
+        //
+        //     body += data.toString();
+        //
+        //
+        //     fs.writeFile("./file.txt", data, function (err) {
+        //
+        //         if (err) {
+        //             return console.log(err);
+        //         }
+        //
+        //         logger.write(data + '\n');
+        //
+        //         console.log("The file was saved!");
+        //
+        //     });
+        //
+        // });
+        //
+        // req.on('end', () => {
+        //     console.log(body);
+        //     res.writeHead(200, {'Content-Type': 'text/html'});
+        //     res.end('./index.html');
+        // });
+
     }
 
 
-    var extname = String(path.extname(filePath)).toLowerCase();
-    var mimeTypes = {
-        '.html': 'text/html',
-        '.js': 'text/javascript',
-        '.css': 'text/css',
-        '.json': 'application/json',
-        '.png': 'image/png',
-        '.jpg': 'image/jpg',
-        '.gif': 'image/gif',
-        '.wav': 'audio/wav',
-        '.mp4': 'video/mp4',
-        '.woff': 'application/font-woff',
-        '.ttf': 'application/font-ttf',
-        '.eot': 'application/vnd.ms-fontobject',
-        '.otf': 'application/font-otf',
-        '.svg': 'application/image/svg+xml'
-    };
+    if (req.method === 'GET' && req.url === '/seeUsers') {
 
-    var contentType = mimeTypes[extname] || 'application/octet-stream';
+        fs.readFile('./file.txt', 'utf8', function (err, data) {
+            if (err) throw err;
+            res.writeHead(200, {'Content-Type': 'text/plain'});
+            res.end('OLA MUNDO');
+            console.log(data);
+        });
 
-    fs.readFile(filePath, function (error, content) {
-        if (error) {
-            if (error.code === 'ENOENT') {
-                fs.readFile('./404.html', function (error, content) {
-                    response.writeHead(200, {'Content-Type': contentType});
-                    response.end(content, 'utf-8');
-                });
-            }
-            else {
-                response.writeHead(500);
-                response.end('Sorry, check with the site admin for error: ' + error.code + ' ..\n');
-                response.end();
-            }
-        }
-        else {
-            response.writeHead(200, {'Content-Type': contentType});
-            response.end(content, 'utf-8');
-        }
-    });
+    }
 
-}).listen(8125);
-console.log('Server running at http://127.0.0.1:8125/');
+
+}).listen(8125, () => {
+    console.log('Server running on http://127.0.0.1:8125/');
+});

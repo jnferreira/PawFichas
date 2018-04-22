@@ -1,0 +1,128 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title Title
+        link(href='https://fonts.googleapis.com/css?family=Roboto:300,400,700', rel='stylesheet', type='text/css')
+        link(rel='stylesheet', type='text/css', href='')
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+        link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.0.8/css/solid.css', integrity='sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk', crossorigin='anonymous')
+        link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css', integrity='sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P', crossorigin='anonymous')
+        script(src='https://code.jquery.com/jquery-3.2.1.min.js', integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=', crossorigin='anonymous')
+    body
+        #first.container
+            h2 Morada Preferencial
+            br
+            br
+            br
+            form#send(action='http://127.0.0.1:8125/forms', method='post')
+                div
+                    .form-group
+                        label.checkbox-inline
+                            input(type='checkbox', value='')
+                            | Casa
+                        label.checkbox-inline
+                            input(type='checkbox', value='')
+                            | Profissional
+                    br
+                    .form-group(style='width: 10%')
+                        label(for='sel1') Titulo*
+                        select#sel1.form-control(required='')
+                            option titulo1
+                            option titulo2
+                            option titulo3
+                            option titulo4
+                    br
+                    .form-group.col-xs-6.col-md-6
+                        label.control-label(for='name') Nome*
+                        input#name.form-control(type='text', name='Nome', placeholder='Name')
+                    .form-group.col-xs-6.col-md-6
+                        label.control-label(for='name') Apelido*
+                        input#apelido.form-control(type='text', name='Apelido', placeholder='Name')
+                    br
+                    .form-group.col-xs-6.col-md-6
+                        label.control-label(for='name') Email*
+                        input#email1.form-control(type='email', value='', placeholder='')
+                    .form-group.col-xs-6.col-md-6
+                        label.control-label(for='name') Confirmar e-mail*
+                        input#email2.form-control(type='email', value='', placeholder='')
+                    br
+                    .form-group.col-xs-6.col-md-6
+                        label.control-label(for='name') Código Postal*
+                        input#cp.form-control(type='text', value='', placeholder='', onblur='validatecp()')
+                    .form-group.col-xs-6.col-md-6
+                        label.control-label(for='name') Cidade*
+                        input#cidade.form-control(type='text', value='', placeholder='')
+                    br
+                    .form-group(style='width: 40%')
+                        label(for='sel1') País*
+                        select#sel2.form-control
+                            option Portugal
+                            option Espanha
+                            option Italia
+                            option França
+                    br
+                    .form-group.col-xs-6.col-md-6
+                        label.control-label(for='name') Nº de Telefone
+                        input#tele.form-control(type='tel', value='', placeholder='')
+                    .form-group.col-xs-6.col-md-6
+                        label.control-label(for='name') TM
+                        input#movel.form-control(type='tel', value='', placeholder='')
+                br
+                br
+                br
+                br
+                br
+                br
+                hr
+                br
+                br
+                br
+                div
+                    h2 Detalhes do Condutor
+                    br
+                    br
+                    br
+                    label(for='sel1') Data de Nascimento*
+                    #select1.form-inline
+                        select#sel3.form-control
+                            option 0
+                            option titulo2
+                            option titulo3
+                            option titulo4
+                        select#sel4.form-control
+                            option titulo1
+                            option titulo2
+                            option titulo3
+                            option titulo4
+                        select#sel5.form-control
+                            option titulo1
+                            option titulo2
+                            option titulo3
+                            option titulo4
+                    br
+                    .form-group.col-xs-6.col-md-6
+                        label.control-label(for='name') Nova Password*
+                        input#pass1.form-control(type='password', value='', onblur='validatePw()', placeholder='')
+                    .form-group.col-xs-6.col-md-6
+                        label.control-label(for='name') Confirmar nova Password*
+                        input#pass2.form-control(type='password', value='', placeholder='')
+                    br
+                    .form-group.col-xs-12.col-md-12
+                        label.control-label(for='name') Nº de Carta de Condução*
+                        input#carta.form-control(type='text', value='', placeholder='', style='width: 24.5%')
+                    .form-group(style='margin-top: 180px')
+                        label.checkbox-inline
+                        input(type='checkbox', value='', style='padding: 10px 10px 10px 10px')
+                        | Aceito os Termos e Condições
+                        |                     Gerais
+                    br
+                    #submitBtn.container
+                        button#btn1.btn-primary(href='index.html')
+                        input#btn2(name='submit', type='submit')
+                    br
+                    br
+                    br
+        script(language='JavaScript', type='text/javascript', src='')
+

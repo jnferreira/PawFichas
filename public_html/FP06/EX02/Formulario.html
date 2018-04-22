@@ -24,7 +24,8 @@
     <br>
     <br>
     <br>
-    <form>
+
+    <form id="send" action="http://127.0.0.1:8125/forms" method="post">
         <div>
 
             <div class="form-group">
@@ -55,42 +56,42 @@
 
             <div class="form-group col-xs-6 col-md-6">
                 <label for="name" class="control-label">Nome*</label>
-                <input type="text" value='' class="form-control" id="name" placeholder="" required>
+                <input type="text" name="Nome" placeholder="Name" id="name" class="form-control">
             </div>
 
 
             <div class="form-group col-xs-6 col-md-6">
                 <label for="name" class="control-label">Apelido*</label>
-                <input type="text" value='' class="form-control" id="apelido" placeholder="" required>
+                <input type="text" name="Apelido" placeholder="Name" class="form-control" id="apelido">
             </div>
 
             <br>
 
             <div class="form-group col-xs-6 col-md-6">
                 <label for="name" class="control-label">Email*</label>
-                <input type="email" value='' class="form-control" id="email1" placeholder="" required>
+                <input type="email" value='' class="form-control" id="email1" placeholder="" >
             </div>
             <div class="form-group col-xs-6 col-md-6">
                 <label for="name" class="control-label">Confirmar e-mail*</label>
-                <input type="email" value='' class="form-control" id="email2" placeholder="" required>
+                <input type="email" value='' class="form-control" id="email2" placeholder="" >
             </div>
 
             <br>
 
             <div class="form-group col-xs-6 col-md-6">
                 <label for="name" class="control-label">Código Postal*</label>
-                <input type="text" value='' class="form-control" id="cp" placeholder="" onblur="validatecp()" required>
+                <input type="text" value='' class="form-control" id="cp" placeholder="" onblur="validatecp()" >
             </div>
             <div class="form-group col-xs-6 col-md-6">
                 <label for="name" class="control-label">Cidade*</label>
-                <input type="text" value='' class="form-control" id="cidade" placeholder="" required>
+                <input type="text" value='' class="form-control" id="cidade" placeholder="" >
             </div>
 
             <br>
 
             <div class="form-group" style="width: 40%">
                 <label for="sel1">País*</label>
-                <select class="form-control" id="sel2" required>
+                <select class="form-control" id="sel2" >
                     <option>Portugal</option>
                     <option>Espanha</option>
                     <option>Italia</option>
@@ -159,20 +160,20 @@
 
             <div class="form-group col-xs-6 col-md-6">
                 <label for="name" class="control-label">Nova Password*</label>
-                <input type="password" value='' class="form-control" id="pass1" onblur="validatePw()" placeholder="" required>
+                <input type="password" value='' class="form-control" id="pass1" onblur="validatePw()" placeholder="" >
             </div>
 
 
             <div class="form-group col-xs-6 col-md-6">
                 <label for="name" class="control-label">Confirmar nova Password*</label>
-                <input type="password" value='' class="form-control" id="pass2" placeholder="" required>
+                <input type="password" value='' class="form-control" id="pass2" placeholder="" >
             </div>
 
             <br>
 
             <div class="form-group col-xs-12 col-md-12">
                 <label for="name" class="control-label">Nº de Carta de Condução*</label>
-                <input type="text" value='' class="form-control" id="carta" placeholder="" style="width: 24.5%" required>
+                <input type="text" value='' class="form-control" id="carta" placeholder="" style="width: 24.5%" >
             </div>
 
 
@@ -188,7 +189,7 @@
             <br>
             <div class="container" id="submitBtn">
 
-                <button class="btn-primary" id="btn1"><input id="btn2" type="submit" value="CRIAR O MEU PERFIL">
+                <button class="btn-primary" id="btn1" href="index.html"><input id="btn2" name="submit" type="submit">
                 </button>
 
             </div>
@@ -202,6 +203,6 @@
 </div>
 
 
-<script language="JavaScript" type="text/javascript" src="formularioj.js"></script>
+<script language="JavaScript" type="text/javascript" src=""></script>
 </body>
 </html>

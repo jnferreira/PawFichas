@@ -1,0 +1,43 @@
+.row{
+    margin-top: 20px;
+}
+
+.form-group input{
+    width: 50%;
+}
+
+#select1{
+    display: table-row;
+    width: 10%;
+
+}
+
+#submitBtn{
+    text-align: start;
+    border-radius: 50px;
+}
+
+#btn1{
+    border-radius: 50px;
+    padding: 10px 20px 10px 10px;
+    background-color: rgba(0,0,0,0.21);
+    border: transparent;
+}
+
+#btn2{
+    background-color: transparent;
+    border: transparent;
+    color: #1e8010;
+    font-weight: bold;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    margin: 0 90px 0 90px;
+}
